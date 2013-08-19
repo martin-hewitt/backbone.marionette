@@ -9,7 +9,7 @@ Marionette.Renderer = {
   // passed to the `TemplateCache` object to retrieve the
   // template function. Override this method to provide your own
   // custom rendering and template handling for all of Marionette.
-  render: function(template, data, context){
+  render: function(template, data){
 
     if (!template) {
       var error = new Error("Cannot render the template since it's false, null or undefined.");
@@ -24,7 +24,7 @@ Marionette.Renderer = {
       templateFunc = Marionette.TemplateCache.get(template);
     }
 
-    return templateFunc.apply(context, [data]);
+    return templateFunc(data);
   }
 };
 
