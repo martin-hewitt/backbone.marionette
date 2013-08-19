@@ -1,4 +1,4 @@
-### v1.1 [view commit logs](https://github.com/marionettejs/backbone.marionette/compare/v1.0.4...v1.1.0)
+### v1.1 [view commit logs](https://github.com/marionettejs/backbone.marionette/compare/v1.0.4...v1.1)
 
 * Marionette.View / All Views
   * Fix for `ui` bindings to not be removed from view prototype, if unrendered view is closed
